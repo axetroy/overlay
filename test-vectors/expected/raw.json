@@ -1,0 +1,45 @@
+{
+  "name": "raw-min-demo",
+  "input": {
+    "stub_sha256": "27eb695388efd588ea4b8cdc22e7fcd03f6e9e32a8a56a8a48c4c579342f40f3",
+    "stub_len": 18,
+    "archive_format": "raw",
+    "compression": "none",
+    "files": [
+      {
+        "name": "conf/app.ini",
+        "size": 18,
+        "sha256": "74f7e88eaa5b55138b5d668ed16ad88ff0ae9145cffc1d4c364d352ec155d962",
+        "mode": "0644"
+      },
+      {
+        "name": "hello.txt",
+        "size": 16,
+        "sha256": "cd737218582ea6b3ef2318866a7fe6daaea162f51981c6f2dba0cbffad358c5f",
+        "mode": "0644"
+      }
+    ]
+  },
+  "expect": "ok",
+  "file_size": 193,
+  "trailer_offset": 52,
+  "archive_offset": 18,
+  "archive_size": 34,
+  "archive_size_raw": 34,
+  "files": [
+    {
+      "name": "conf/app.ini",
+      "size": 18,
+      "data_offset": 0,
+      "mode": "0644",
+      "sha256": "74f7e88eaa5b55138b5d668ed16ad88ff0ae9145cffc1d4c364d352ec155d962"
+    },
+    {
+      "name": "hello.txt",
+      "size": 16,
+      "data_offset": 18,
+      "mode": "0644",
+      "sha256": "cd737218582ea6b3ef2318866a7fe6daaea162f51981c6f2dba0cbffad358c5f"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "corrupt-trailer",
+  "derived_from": "raw",
+  "mutation": "trailer_checksum[low byte] ^= 0x01 (\u5c3e\u90e8 4 \u5b57\u8282\u88ab\u7be1\u6539)",
+  "expect": "reject:trailer_checksum",
+  "file_size": 193,
+  "trailer_offset": 52,
+  "note": "\u8bfb\u53d6\u65b9\u5b9a\u4f4d\u5230 Trailer \u540e, header_checksum \u4ecd\u901a\u8fc7(\u5934\u90e8\u672a\u6539), \u4f46 trailer_checksum \u6821\u9a8c\u5931\u8d25 -> \u5fc5\u987b\u62d2\u7edd\u3002"
+}
